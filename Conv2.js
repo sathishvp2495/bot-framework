@@ -36,7 +36,7 @@ bot.dialog('/conversation',[
         if(isNaN(results.response)){
         session.userData.name=results.response;
         console.log(session.userData.name);
-        session.beginDialog('/company');
+        session.beginDialog('/company'); 
     } else {
         session.send("your answer is wrong!");
         session.beginDialog('/conversation');
